@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dot_env_demo/environement.dart';
+import 'package:flutter_dot_env_demo/places_serach_view.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 Future<void> main() async {
@@ -14,10 +15,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: PlacesSearchView(),
     );
   }
 }
